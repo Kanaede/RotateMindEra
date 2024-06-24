@@ -1,2 +1,4 @@
 # RotateMindEra
-Rotate the Mindustry Era
+Rotated the Mindustry Era
+
+This mod contains various Eras with their own uniqueness
