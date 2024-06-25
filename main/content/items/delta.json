@@ -1,0 +1,13 @@
+{
+  "localizedName": "Deltais",
+  "color": "48f8ebff",
+  "frames": 9,
+  "transitionFrames": 3,
+  "frameTime": 1,
+  "hidden": true,
+  "research":{
+    "root":true
+    "name":"[#48f8eb]The Deltais",
+    "requiresUnlock":false,"alwaysUnlocked":true
+  }
+}
