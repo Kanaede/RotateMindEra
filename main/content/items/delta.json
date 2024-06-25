@@ -6,8 +6,8 @@
   "frameTime": 1,
   "hidden": true,
   "research":{
-    "root":true
-    "name":"[#48f8eb]The Deltais",
-    "requiresUnlock":false,"alwaysUnlocked":true
-  }
+    "root":true,
+    "name": "[#48f8eb]The Deltais"
+  },
+  "alwaysUnlocked": true
 }

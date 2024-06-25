@@ -10,7 +10,7 @@
   "shoot":{
     "type":"ShootPattern",
     "firstShotDelay":600
-  }
+  },
   "shake":5,
   "targetAir":true,
   "targetGround":true,

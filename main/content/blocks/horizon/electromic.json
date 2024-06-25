@@ -10,7 +10,7 @@
   "shoot":{
     "type":"ShootPattern",
     "firstShotDelay":1200,
-  }
+  },
   "shake":5,
   "ammoUseEffect":"none",
   "rotateSpeed": 0.3,
