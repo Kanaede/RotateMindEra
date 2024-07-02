@@ -2,7 +2,7 @@
   "type":"ItemTurret",
   "category":"turret",
   "health":24000,
-  "size":12,
+  "size":5,
   "range":870,
   "maxAmmo":60,
   "ammoPerShot":25,
@@ -126,7 +126,7 @@
           "lifetime": 40,
           "colorFrom": "FCC01CFF",
           "colorTo": "FCC01C00",
-          "region": "turret-expansion-rail",
+          "region": "turret-expansion-rail"
           }
         ]
       }

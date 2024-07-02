@@ -13,14 +13,14 @@
   "range": 160,
   "shoot": {
     "type": "shootPattern",
-    "firstShotDelay": 60,
+    "firstShotDelay": 30,
     "shotDelay": 0,
     "shots": 1
   },
   "ammoTypes": {
     "titanium": {
-      "type": "BasicBulletType",
-      "damage": 20,
+      "type": "ArtilleryBulletType",
+      "damage": 5,
       "speed": 1,
       "lifetime": 140,
       "scaleLife": true,
@@ -37,7 +37,7 @@
         "colorTo": "5FFFC600"
       },
       "splashDamage": 8,
-      "ammoMultiplier": 1,
+      "ammoMultiplier": 2,
       "scaledSplashDamage": true,
       "splashDamageRadius": 20,
       "buildingDamageMultiplier":1.5,
@@ -45,9 +45,42 @@
       "height": 6,
       "frontColor": "FFFFFFFF",
       "backColor": "4BFFC1FF",
-      "healAmount": 70,
+      "healAmount": 120,
       "hitSound": "explosionbig",
-      "collidesTeam": true
+      "collidesTeam": true,
+      "collidesTiles": false
+    },
+    "floaton": {
+      "type": "ArtilleryBulletType",
+      "damage": 8,
+      "speed": 1,
+      "lifetime": 140,
+      "scaleLife": true,
+      "trailChance": 1,
+      "trailRotation": true,
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "length": 0,
+        "lifetime": 30,
+        "colorFrom": "5FFFC6FF",
+        "colorTo": "5FFFC600"
+      },
+      "splashDamage": 12,
+      "ammoMultiplier": 2,
+      "scaledSplashDamage": true,
+      "splashDamageRadius": 30,
+      "buildingDamageMultiplier":1.5,
+      "width": 2,
+      "height": 6,
+      "frontColor": "FFFFFFFF",
+      "backColor": "4BFFC1FF",
+      "healPercent": 8,
+      "hitSound": "explosionbig",
+      "collidesTeam": true,
+      "collidesTiles": false
     }
   },
   "consumes": {

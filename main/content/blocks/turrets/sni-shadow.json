@@ -3,7 +3,7 @@
   "category":"turret",
   "health": 2800,
   "reload": 260,
-  "size": 2,
+  "size": 3,
   "targetAir": true,
   "targetGround": true,
   "rotateSpeed": 1.7,
@@ -12,7 +12,7 @@
   "minWarmup": 0.8,
   "ammoPerShot": 3,
   "range": 400,
-  "shootSound": "sniper",
+  "shootSound": "subm-gun1",
   "shoot": {
     "firstShotDelay": 80,
     "shots": 1,
@@ -20,32 +20,33 @@
   },
   "drawer": {
     "type": "drawTurret",
-    "parts": [
+    "parts": [{
+        "type": "RegionPart",
+        "progress": "warmup",
+        "outlineLayerOffset": -0.003,
+        "suffix": "-hole",
+        "layerOffset": -0.002
+      },
       {
       "type": "RegionPart",
       "progress": "warmup",
-      "y": 12,
+      "y": 10,
       "moveY": -1,
-      "outlineLayerOffset": 0.001,
+      "outlineLayerOffset": -0.001,
       "suffix": "-barrel",
       "layerOffset": -0.001,
-      "moves": [
-        {
+      "moves": [{
         "type": "PartMove",
         "progress": "recoil",
-        "y": -7
-        }
-      ]
-    },
+        "y": -8
+      }]},
       {
         "type": "RegionPart",
         "progress": "warmup",
-        "outlineLayerOffset": 0.001,
+        "outlineLayerOffset": -0.003,
         "suffix": "-body",
         "layerOffset": 0.001
-      }
-    ]
-  },
+      }]},
   "ammoTypes": {
     "thorium": {
       "type":"BasicBulletType",
@@ -79,7 +80,11 @@
       "scaledSplashDamage": true,
       "splashDamageRadius": 20,
       "buildingDamageMultiplier":0.7,
-      "damage": 730
+      "damage": 730,
+      "pierceBuilding": true,
+      "pierce": true,
+      "pierceCap": 3,
+      "pierceDamageFactor": 0.3
     }
   },
   "requirements": [
@@ -89,7 +94,7 @@
     "titanium/300"
   ],
   "consumes": {
-    "power":15,
+    "power":10,
     "coolant": {
       "amount": 0.19
     }
