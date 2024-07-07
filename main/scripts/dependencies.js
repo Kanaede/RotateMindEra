@@ -1,5 +1,4 @@
-const rotMindEra = Vars.mods.locateMod("rotatemindera");
-var modData = rotMindEra.meta;
+var modData = Vars.mods.locateMod("rotatemindera").meta;
 var depen = Vars.mods.locateMod("mindustry-expansion");
 
 modData.description = Core.bundle.get("mod.desc");
