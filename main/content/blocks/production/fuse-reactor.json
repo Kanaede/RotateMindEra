@@ -18,71 +18,62 @@
     "liquid":"slag/1"
   },
   "requirements":[
-    {"item":"thorium","amount":400},
-    {"item":"plastanium","amount":270},
+    {"item":"fortress-conta","amount":300},
     {"item":"phase-fabric","amount":430}
   ],
   "research":"surge-smelter",
   "drawer":{
     "type":"DrawMulti",
-    "drawers":[
-      {
-        "type": "DrawParticles",
-        "color": "9681fb",
-        "alpha": 0.4,
-        "blending": "additive",
-        "particleSize": 4,
-        "particleRad": 16,
-        "particles": 43,
-        "fadeMargin": 0.8,
-        "rotateScl": 4,
-        "particleLife": 40
-      },
-      {
-        "type": "DrawCrucibleFlame",
-        "flameColor": "9681fb",
-        "midColor": "bf92f9",
-        "alpha": 0.6,
-        "particleSize": 4,
-        "particleRad": 11,
-        "particles": 43,
-        "fadeMargin": 0.8,
-        "rotateScl": 4,
-        "particleLife": 80
-      },
-      {
-        "type": "DrawPlasma",
-        "suffix": "-plasma-",
-        "plasma1": "9681fb",
-        "plasma2": "bf92f9"
-      },
-      {
-        "type": "DrawDefault"
-      }
-    ]
-  },
+    "drawers":[{
+      "type": "DrawRegion", "suffix": "-bottom"
+    },{
+      "type": "DrawParticles",
+      "color": "9681fb",
+      "alpha": 0.4,
+      "blending": "additive",
+      "particleSize": 4,
+      "particleRad": 16,
+      "particles": 43,
+      "fadeMargin": 0.8,
+      "rotateScl": 4,
+      "particleLife": 40
+    },{
+      "type": "DrawCrucibleFlame",
+      "flameColor": "9681fb",
+      "midColor": "bf92f9",
+      "alpha": 0.6,
+      "particleSize": 4,
+      "particleRad": 11,
+      "particles": 43,
+      "fadeMargin": 0.8,
+      "rotateScl": 4,
+      "particleLife": 80
+    },{
+      "type": "DrawPlasma",
+      "suffix": "-plasma-",
+      "plasma1": "9681fb",
+      "plasma2": "bf92f9"
+    },{
+      "type": "DrawDefault"
+    }]},
   "updateEffectChance": 0.09,
   "updateEffect": {
     "type": "RadialEffect",
     "effect": {
       "type": "MultiEffect",
-      "effects": [
-        {
-          "type": "ParticleEffect",
-          "particles": 3,
-          "lifetime": 60,
-          "interp": "circleOut",
-          "length": 30,
-          "cone": -8,
-          "sizeFrom": 3,
-          "sizeTo": 0,
-          "colorFrom": "9681fb",
-          "colorTo": "9681fb"
-        }
-      ]
-    },
+      "effects": [{
+        "type": "ParticleEffect",
+        "particles": 3,
+        "lifetime": 60,
+        "interp": "circleOut",
+        "length": 30,
+        "cone": -8,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "colorFrom": "9681fb",
+        "colorTo": "9681fb"
+      }]},
     "rotationOffset": 45,
     "lengthOffset": 12,
     "amount": 4
-  }
-}
+}}

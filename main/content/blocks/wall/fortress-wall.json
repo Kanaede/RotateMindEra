@@ -11,5 +11,5 @@
   "conductivePower": true,
   "insulated": true,
   "consumesPower": true,
-  "requirements": [{"item":"fortress-container","amount":8}]
+  "requirements": [{"item":"fortress-conta","amount":8}]
 }
