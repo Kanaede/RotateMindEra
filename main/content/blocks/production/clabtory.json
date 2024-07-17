@@ -1,0 +1,34 @@
+{
+  "type": "GenericCrafter",
+  "category": "crafting",
+  "hasItems": true,
+  "hasPower": true,
+  "hasLiquids": true,
+  "size": 4,
+  "craftTime": 100,
+  "consumes": {
+    "items": {
+      "items": [
+        {"item":"building-conta","amount":2},
+        {"item":"plastanium","amount":2},
+        {"item":"surge-alloy","amount":1}
+      ]},
+    "liquid": {"liquid":"nevoltron","amount":0.05},
+    "power": 5
+  },
+  "outputItem": {"item":"fortress-conta","amount":2},
+  "requirements": [
+    {"item":"base-conta","amount":680},
+    {"item":"building-conta","amount":420},
+    {"item":"silicon","amount":600},
+    {"item":"thorium","amount":460}
+  ],
+  "drawer":{
+    "type": "DrawMulti",
+    "drawers": [
+      {"type": "DrawRegion", "suffix": "-bottom"},
+      {"type": "DrawLiquidRegion", "drawLiquid": "nevoltron", "suffix": "-liq-indicator"},
+      {"type": "DrawDefault"},
+      {"type": "DrawGlowRegion", "suffix": "-light", "glowIntesity": 1.1, "color": "ad805a"}]
+  }
+}

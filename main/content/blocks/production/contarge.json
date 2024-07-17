@@ -1,0 +1,34 @@
+{
+  "type": "GenericCrafter",
+  "category": "crafting",
+  "hasItems": true,
+  "hasPower": true,
+  "hasLiquids": false,
+  "size": 2,
+  "craftTime": 60,
+  "consumes": {
+    "items": {
+      "items": [
+        {"item":"base-conta","amount":1},
+        {"item":"lead","amount":1},
+        {"item":"titanium","amount":1}
+    ]},
+    "power": 3
+  },
+  "outputItem": {"item":"building-conta","amount":1},
+  "requirements": [
+    {"item":"base-conta","amount":200},
+    {"item":"titanium","amount":220},
+    {"item":"silicon","amount":200}
+  ],
+  "drawer":{
+    "type":"DrawMulti",
+    "drawers":[
+      {"type":"DrawRegion","suffix":"-bottom"},
+      {"type":"DrawRegion","suffix":"-mid"},
+      {"type":"DrawGlowRegion", "suffix":"-light", "color":"1f91ff", "layer": 30},
+      {"type":"DrawRegion", "suffix": "-weave", "spinSprite": true, "rotateSpeed": 2},
+      {"type":"DrawDefault"}
+    ]
+  }
+}
