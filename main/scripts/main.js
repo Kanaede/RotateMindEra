@@ -1,4 +1,4 @@
-let modExtra = require("dependencies");
+const dependen = require("dependencies");
 
 const delta = extend(Item, "delta", {
   setStats(){

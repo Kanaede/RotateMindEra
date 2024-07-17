@@ -1,8 +1,9 @@
 {
-  "name": "rotatemindera",
-  "displayName": "Rotate MindEra",
+  "name": "turnera",
+  "displayName": "Turning Era",
   "version": "0.1 build-1",
   "description": "Various Eras with their own uniqueness",
   "minGameVersion": 146,
   "author": "Kanaede",
+  "softDependencies": ["mindustry-expansion","test"]
 }
