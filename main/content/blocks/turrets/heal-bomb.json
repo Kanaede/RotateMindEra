@@ -45,7 +45,7 @@
       "height": 6,
       "frontColor": "FFFFFFFF",
       "backColor": "4BFFC1FF",
-      "healAmount": 120,
+      "healAmount": 300,
       "hitSound": "explosionbig",
       "collidesTeam": true,
       "collidesTiles": false
@@ -87,10 +87,9 @@
     "power": 1.5
   },
   "requirements": [
-    "lead/250",
-    "titanium/230",
-    "silicon/250"
+    {"item":"building-conta","amount":120},
+    {"item":"lead","amount":340}
   ],
-  "research": "deltais-delta",
+  "research": "delta",
   "shootSound": "cannon"
 }

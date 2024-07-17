@@ -24,8 +24,7 @@
       "type":"ShootAlternate",
       "barrels":1,
       "shots":6
-    }
-  },
+  }},
   "ammoTypes": {
     "graphite": {
       "type":"ArtilleryBulletType",
@@ -41,13 +40,12 @@
       "scaleLife":true,
       "hitShake":2,
       "ammoMultiplier":1
-    }
-  },
+  }},
   "requirements":[
     {"item":"graphite","amount":200},
     {"item":"titanium","amount":230},
     {"item":"plastanium","amount":210}
   ],
-  "research":"berondong",
+  "research":"machine-gun",
   "researchCostMultiplier":3
 }

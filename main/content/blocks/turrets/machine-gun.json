@@ -5,8 +5,6 @@
   "reload":2,
   "shake":1,
   "ammoPerShot":30,
-  "shootWarmupSpeed": 0.05,
-  "minWarmup": 0.8,
   "range":230,
   "maxAmmo":980,
   "inaccuracy":1,
@@ -19,51 +17,9 @@
       "barrels": 1,
       "shots":1
     },
-    "dest": [
-      {"shots": 1,"shotDelay": 10}
-    ],
-    "firstShotDelay": 119,
-    "shots": 1
-  },
-  "drawer": {
-    "type": "drawTurret",
-    "parts": [
-      {
-      "type":"RegionPart",
-      "suffix":"-heat",
-      "progress": "warmup",
-      "moveY": -0.5,
-      "outlineLayerOffset": -0.004,
-      "layerOffset": -0.001,
-      "moves": [
-        {
-        "type": "PartMove",
-        "progress": "recoil",
-        "y": -3
-        }
-      ]
-    },
-      {
-        "type": "RegionPart",
-        "progress": "warmup",
-        "moveY": -0.5,
-        "outlineLayerOffset": 0.001,
-        "suffix": "-barrel",
-        "layerOffset": -0.002,
-        "moves": [
-          {
-          "type": "PartMove",
-          "progress": "recoil",
-          "y": -3
-          }
-        ]
-      },
-      {
-        "type": "RegionPart",
-        "outlineLayerOffset": 0.001,
-        "layerOffset": 0.001
-      }
-    ]
+    "dest": [{"shots": 1,"shotDelay": 10}],
+    "firstShotDelay": 180,
+    "shots": 2
   },
   "ammoTypes": {
     "copper": {
@@ -101,8 +57,8 @@
       "speed":10,
       "lifetime":25,
       "ammoMultiplier":160,
-      "damage":26,
-      "splashDamage":20,
+      "damage":30,
+      "splashDamage":5,
       "scaledSplashDamage": true,
       "splashDamageRadius": 10,
       "frontColor": "FFFFFFFF",
@@ -115,23 +71,20 @@
       "speed":10,
       "lifetime":25,
       "ammoMultiplier":180,
-      "splashDamage":60,
+      "splashDamage":50,
+      "damage": 5,
       "scaledSplashDamage": true,
       "splashDamageRadius": 28,
       "frontColor": "FFFFFFFF",
       "backColor": "FCC01CFF"
-    }
-  },
+  }},
   "requirements": [
-    "copper/310",
-    "lead/320",
-    "silicon/250",
-    "titanium/290"
+    {"item":"building-conta", "amount":240},
+    {"item":"silicon", "amount": 300}
   ],
   "consumes": {
     "coolant": {
       "amount": 0.19
-    }
-  },
-  "research": "deltais-delta"
+  }},
+  "research": "delta"
 }

@@ -7,10 +7,6 @@
   "maxAmmo":60,
   "ammoPerShot":25,
   "reload":1200,
-  "shoot":{
-    "type":"ShootPattern",
-    "firstShotDelay":600
-  },
   "shake":5,
   "targetAir":true,
   "targetGround":true,
@@ -95,41 +91,6 @@
           }
         ]
       }
-    },
-    "primax": {
-      "type":"BasicBulletType",
-      "height":70,
-      "width":50,
-      "lifetime":9,
-      "speed":100,
-      "ammoMultiplier":1,
-      "damage":58000,
-      "splashDamage":800,
-      "splashDamageRadius":20,
-      "frontColor":"FFFFFFFF",
-      "backColor":"FCC01CFF",
-      "despawnEffect":"flakExplosion",
-      "buildingDamageMultiplier":0.5,
-      "smokeEffect":"shootBigSmoke",
-      "hittable":false,
-      "trailChance":1,
-      "trailRotation":false,
-      "trailEffect": {
-        "type":"multiEffect",
-        "effects":[
-          {
-          "type":"ParticleEffect",
-          "particles":1,
-          "sizeFrom":100,
-          "sizeTo":50,
-          "length":1,
-          "lifetime": 40,
-          "colorFrom": "FCC01CFF",
-          "colorTo": "FCC01C00",
-          "region": "turret-expansion-rail"
-          }
-        ]
-      }
     }
   },
   "requirements":[
@@ -144,7 +105,7 @@
     "block": "elto-mortar"
   },
   "consumes": {
-    "power":40,
+    "power":80,
     "coolant": {
       "amount":1.2
     }
